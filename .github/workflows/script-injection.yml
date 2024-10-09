@@ -11,6 +11,7 @@ jobs:
       TITLE: ${{ github.event.issue.title }}
     steps:
       - name: Assign label
+      #nao associe variaveis no run
         run: |
           if [[ "$TITLE" == *"bug"* ]]; then 
           echo "Issue is about a bug!"
